@@ -7,6 +7,7 @@
     <script data-require="bootstrap@*" data-semver="4.0.5" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
     <script data-require="angularjs@1.6.4" data-semver="1.6.4" src="https://code.angularjs.org/1.6.4/angular.min.js"></script>
     <script data-require="angular-route@1.6.2" data-semver="1.6.2" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
+    <script data-require="tether@1.4.0" data-semver="1.4.0" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
     <script src="MainController.js"></script>
@@ -17,7 +18,9 @@
 
   <body class="col-sm-6">
     <h1>Angular Demo</h1>
-    <div ng-view=""></div>
+    <div ng-view="">
+      <main></main>
+    </div>
   </body>
 
 </html>

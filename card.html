@@ -1,0 +1,11 @@
+  {{ uc.error }}
+  <div class="card">
+    <img src="{{uc.user.avatar_url}}" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4>{{uc.user.name}}</h4>
+      <p><a href="{{uc.user.html_url}}">{{uc.user.login}}</a></p>
+      <p>Followers: {{uc.user.followers}}</p>
+      <p>Following: {{uc.user.following}}</p>
+      <button ng-click="uc.repoClick()" class="btn btn-info">Repos: {{uc.repos.length}}</button>
+    </div>
+  </div>

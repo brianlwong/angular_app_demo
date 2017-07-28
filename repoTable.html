@@ -1,0 +1,21 @@
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>Repository:</th>
+      <th>Public:</th>
+      <th>Language:</th>
+      <th>Clone URL:</th>
+      <th>Stars:</th>
+    </tr>
+  </thead>
+  <tbody ng-repeat="repo in rc.repos">
+    <tr>
+      <td>{{repo.name}}</td>
+      <td>{{!repo.private}}</td>
+      <td>{{repo.language}}</td>
+      <td>{{repo.stargazers_count}}</td>
+      <td><a href="{{repo.clone_url}}">{{repo.clone_url}}</a></td>
+    </tr>
+
+  </tbody>
+</table>
